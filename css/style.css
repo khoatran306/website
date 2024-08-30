@@ -15,7 +15,7 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: #ffffff; }
 
 a {
   text-decoration: none;
@@ -31,10 +31,11 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
+  background: #ffffff !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
+    color: #4059ad;
     font-size: 32px;
     font-weight: 600; }
     .custom-navbar .navbar-brand > span {
@@ -51,7 +52,7 @@ a {
       margin-right: 15px; } }
   .custom-navbar .custom-navbar-nav li a {
     font-weight: 500;
-    color: #ffffff !important;
+    color: #4059ad !important;
     opacity: .5;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -96,7 +97,7 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #3b5d50;
+  background: #fff;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -536,7 +537,8 @@ a {
 
 .footer-section {
   padding: 80px 0;
-  background: #ffffff; }
+  background: #4059ad;
+  color: #ffffff }
   .footer-section .relative {
     position: relative; }
   .footer-section a {
@@ -599,7 +601,7 @@ a {
     font-size: 32px;
     font-weight: 500;
     text-decoration: none;
-    color: #3b5d50; }
+    color: #ffffff; }
   .footer-section .custom-social li {
     margin: 2px;
     display: inline-block; }
