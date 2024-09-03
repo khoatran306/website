@@ -99,7 +99,9 @@ a.more {
     transition: .15s all ease-out;
   }
 }
-
+.custom-navbar .navbar-brand:hover {
+  color: #02457a !important;
+}
 .custom-navbar .custom-navbar-nav li a:hover {
   opacity: 1;
 }
@@ -907,7 +909,7 @@ a.more {
 }
 
 .untree_co-section {
-  padding: 7rem 0;
+  padding: 1rem 0;
 }
 
 .form-control {
@@ -1036,4 +1038,79 @@ textarea {
 
 .carousel-item {
   transition: (.01s ease-in-out left) !important;
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.service-card p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+  }
+}
+
+.section_0 {
+  background-blend-mode: luminosity;
+  background-image: url(https://static.hbo.com/2024-05/house-of-the-dragon-s2-ka-1920.jpg) !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #333f48 !important;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 48px 0;
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.section_1 {
+  background-color: #02457a;
+  position: relative;
+  padding: 10px;
+  padding-left: 40px;
+  width: 60vw;
+  margin-top: -30px;
+  z-index: 15;
+}
+.section_1_textbox {
+  color: white;
+  font-style: italic;
 }
