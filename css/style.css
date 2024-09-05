@@ -82,6 +82,8 @@ a.more {
   position: relative;
 }
 
+
+
 @media (min-width: 768px) {
   .custom-navbar .custom-navbar-nav li a:before {
     content: "";
@@ -248,6 +250,34 @@ a.more {
   color: #02457a;
   background: #ffffff;
   border-color: #ffffff;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid white; /* Add a white border */
+  outline: none; /* Remove outline */
+  background-color: #02457a; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* Remove padding */
+  border-radius: 50%; /* Fully rounded corners */
+  font-size: 16px; /* Adjust font size */
+  width: 50px; /* Set smaller width for round shape */
+  height: 50px; /* Set smaller height for round shape */
+  text-align: center; /* Center text */
+  line-height: 40px; /* Center text vertically */
+}
+
+#myBtn svg {
+  width: 24px; /* Adjust the size of the SVG */
+  height: 24px; /* Adjust the size of the SVG */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .btn:hover {
