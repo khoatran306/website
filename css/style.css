@@ -1134,3 +1134,19 @@ h2 {
   color: white;
   font-style: italic;
 }
+
+
+@keyframes flyintext{
+  0%{
+    color:#000000;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
