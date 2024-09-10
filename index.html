@@ -82,7 +82,7 @@
     <!-- End Header/Navigation -->
 
     <!-- Start Hero Section -->
-    <div class="w-100 h-50">
+    <div class="position-relative overflow-hidden">
       <div class="position-relative">
         <div
           id="carouselExampleSlidesOnly"
@@ -114,16 +114,52 @@
             </div>
           </div>
         </div>
-        <div
-          class="position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center justify-content-center text-white"
-        >
-          <h1 class="text-black" style="text-align: cetner;"> CONCEPT TO REALITY </h1>
-         
-          <a href="contact.html" class="btn rounded-3">Contact Us</a>
+        <div class="hero-content">
+          <h1 id="animatedText">
+              <span class="animate-text">C</span>
+              <span class="animate-text">O</span>
+              <span class="animate-text">N</span>
+              <span class="animate-text">C</span>
+              <span class="animate-text">E</span>
+              <span class="animate-text">P</span>
+              <span class="animate-text">T</span>
+              <span class="animate-text">&nbsp;</span>
+              <span class="animate-text">T</span>
+              <span class="animate-text">O</span>
+              <span class="animate-text">&nbsp;</span>
+              <span class="animate-text">R</span>
+              <span class="animate-text">E</span>
+              <span class="animate-text">A</span>
+              <span class="animate-text">L</span>
+              <span class="animate-text">I</span>
+              <span class="animate-text">T</span>
+              <span class="animate-text">Y</span>
+          </h1>
+          <a href="contact.html" class="btn rounded-3" id="contactButton">Contact Us</a>
         </div>
       </div>
-    </div>
+    </div> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', () => {
+              const text = document.querySelectorAll('.animate-text');
+              const button = document.getElementById('contactButton');
+              
+              text.forEach((span, index) => {
+                  setTimeout(() => {
+                      span.classList.add('show');
+                  }, 100 * index);
+              });
+  
+              setTimeout(() => {
+                  button.style.opacity = '1';
+                  button.style.transform = 'translateY(0)';
+              }, 100 * text.length + 200);
+          });
+      </script>
     <!-- End Hero Section -->
+
+
 
     <!-- Start Why Choose Us Section -->
     <div class="why-choose-section">
